@@ -18,15 +18,17 @@
       <header class="header-content">
         <nav class="main-nav">
           <ul id="navigation">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="authors.html">Our Authors</a></li>
-            <li><a href="courses.html">Our Courses</a></li>
+            <li><a href="meals.html">Our Meals</a></li>
+            <li><a href="pricing.html">Our Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -56,8 +58,8 @@
       <div class="promises-content">
         <marquee bgcolor="#4CAF50" height="50"
           ><h2>
-            START WITH AN IDEA ~ OUTLINE YOUR SERIES ~ GET PAID FOR YOUR DAILY
-            #WIP ~ PUBLISH YOUR BOOKS ~ CREATE SUPERFANS!! ~
+            View The Menu ~ Make Your Selections ~ Submit Your Order ~ Pick Up
+            Your Order ~ ENJOY!! ~
           </h2>
         </marquee>
       </div>
@@ -78,10 +80,19 @@
 
     <section class="countdown-container">
       <div class="countdown-content">
-        <h2>Countdown Until Camp NaNoWriMo (April 2024 Edition)!!</h2>
+        <h2>Time Remaining for Next Week's Orders!</h2>
         <hr class="double" />
         <div id="countdown-number"></div>
       </div>
+    </section>
+
+    <section class="container">
+      <h2>
+        Saving lots of time with our services? Here are some new ways to pass
+        the time!
+      </h2>
+      <div class="activity-container" id="activity-container"></div>
+      <button id="get-activity-btn">Click To Load An Activity Above :)</button>
     </section>
 
     <script src="JS/script.js"></script>
