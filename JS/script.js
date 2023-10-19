@@ -2,19 +2,54 @@
 
 const quizData = [
   {
-    question: "What is the most important step of publishing a book?",
-    options: ["Outlining", "Writing", "Editing", "Marketing"],
-    correctAnswer: "Writing",
+    question:
+      "How often does the average American consume fast food in a typical week?",
+    options: [
+      "Never",
+      "Once a week",
+      "2-3 times a week",
+      "4 or more times a week",
+    ],
+    correctAnswer: "2-3 times a week",
   },
   {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Mars", "Jupiter", "Saturn"],
-    correctAnswer: "Mars",
+    question:
+      "On average, how many servings of vegetables does the average American eat each day?",
+    options: [
+      "Less than 1 serving",
+      "1-2 servings",
+      "3-4 servings",
+      "5 or more servings",
+    ],
+    correctAnswer: "3-4 servings",
   },
   {
-    question: "What is the largest mammal in the world?",
-    options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-    correctAnswer: "Blue Whale",
+    question:
+      "How often do most Americans have home-cooked meals for dinner throughout the week?",
+    options: [
+      "Rarely or never",
+      "1-2 times a week",
+      "3-4 times a week",
+      "Almost every night",
+    ],
+    correctAnswer: "3-4 times a week",
+  },
+  {
+    question:
+      "How often does the average American say they consume sugar-sweetened beverages?",
+    options: [
+      "I don't consume sugary drinks",
+      "Rarely, maybe once a week",
+      "2-3 times a week",
+      "Daily or multiple times a day",
+    ],
+    correctAnswer: "Rarely, maybe once a week",
+  },
+  {
+    question:
+      "How often do most Americans read nutrition labels before making a food purchase?",
+    options: ["Always", "Often", "Occasionally", "Rarely or never"],
+    correctAnswer: "Occasionally",
   },
 ];
 
