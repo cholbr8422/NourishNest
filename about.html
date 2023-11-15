@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NourishNest: Weekly Wholesome Eats | Home</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="IMG/L13_favicon.png" type="image/L13_favicon" />
+
+    <section class="header-container">
+      <header class="header-content">
+        <nav class="main-nav">
+          <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="meals.html">Our Meals</a></li>
+            <li><a href="pricing.html">Our Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <section class="intro-container" id="intro">
+      <div class="intro-content">
+        <h1><center>NourishNest: Weekly Wholesome Eats</center></h1>
+        <p>
+          <i>Welcome to NourishNest, where the journey to a healthier you begins with the click of a button! Say goodbye to the hassle of meal planning, cooking, and grocery shopping. We're here to revolutionize your dinner routine and elevate your well-being. 🥗
+
+At NourishNest, we believe that eating nutritious, delicious meals should be a delightful adventure, not a chore. Our culinary wizards, armed with fresh ingredients and a dash of creativity, whip up a delectable menu that changes weekly, ensuring you never fall into a dinner rut again. Whether you're a fitness enthusiast, a busy professional, or just someone looking to savor good food guilt-free, we've got you covered. So, say hello to hassle-free dining, say hello to a healthier, happier you. Let's make dinner fun again! 🍽️✨
+        </p>
+        
+
+        <img
+          src="IMG/EatHealthy.gif"
+          alt="Eat healthy animation"
+          class="intro-eathealthygif"
+          width="250"
+        />
+      </div>
+    </section>
+
+    <section class="promises-container" id="promises">
+      <div class="promises-content">
+        <marquee bgcolor="#4CAF50" height="50"
+          ><h2>
+            View The Menu ~ Make Your Selections ~ Submit Your Order ~ Pick Up
+            Your Order ~ ENJOY!! ~
+          </h2>
+        </marquee>
+      </div>
+    </section>
+
+    <section class="quiz-container" id="quiz">
+      <div class="quiz-content">
+        <h2>LET'S TEST YOUR</h2>
+        <h2>STARTING KNOWLEDGE!!</h2>
+        <p>Take this quick quiz to see how much you know</p>
+        <p>about the eating habits of Americans!</p>
+        <hr class="double" />
+        <div id="question"></div>
+        <div id="options" class="options-container"></div>
+        <button id="next-btn" class="next-button">Next</button>
+      </div>
+    </section>
+
+    <section class="countdown-container">
+      <div class="countdown-content">
+        <h2>Time Remaining for Next Week's Orders!</h2>
+        <hr class="double" />
+        <div id="countdown-number"></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>
+        Saving lots of time with our services? Here are some new ways to pass
+        the time!
+      </h2>
+      <div class="activity-container" id="activity-container"></div>
+      <button id="get-activity-btn">Click To Load An Activity Above :)</button>
+    </section>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
