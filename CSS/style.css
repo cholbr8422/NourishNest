@@ -10,17 +10,26 @@ h1 {
 }
 
 p {
-  color: rgb(111, 9, 62);
+  color: #334226;
   font-size: 20px;
   margin: 0;
   font-style: normal;
+  line-height: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
 }
 
 h2 {
   color: rgb(245, 214, 230);
   font-size: 25px;
   font-style: normal;
-  line-height: 0%;
+  line-height: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
 }
 
 img {
@@ -188,14 +197,19 @@ button:hover {
 /*QUIZ STYLE*/
 
 .quiz-container {
-  background-color: rgb(0, 73, 75);
+  background-color: #588764;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   margin: 0 auto;
-  width: 400px;
+  width: 1000px;
+}
+
+.quiz-content h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .options-container {
@@ -210,10 +224,19 @@ button:hover {
 /*COUNTDOWN STYLE*/
 
 .countdown-container {
-  background-color: rgb(69, 0, 75);
+  background-color: #334226;
   text-align: center;
   padding: 20px;
   margin: 0 auto;
+}
+
+.countdown-content h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
+  line-height: normal;
+  max-width: 100%; /* Make sure the container takes the full width */
 }
 
 .countdown-content {
@@ -231,7 +254,7 @@ hr.double {
   color: #fff;
 }
 
-/*BORED STYLE*/
+/*BORED STYLE - outside of media query, affects all screen sizes*/
 
 .container {
   text-align: center;
@@ -241,9 +264,14 @@ hr.double {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.container h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .activity-container {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 18px; /* This will affect <p> and other text, not <h2> */
   color: #daff76;
 }
 
@@ -257,7 +285,7 @@ hr.double {
 /*CONTACT STYLE*/
 
 .contactform-container {
-  background-color: rgb(0, 73, 75);
+  background-color: #588764;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -277,4 +305,56 @@ input,
 textarea {
   display: block;
   margin-bottom: 10px;
+}
+
+/*-------------------RESPONSIVE MOBILE VIEW-------------------*/
+
+@media only screen and (max-width: 768px) {
+  /* Adjust the overall layout containers */
+  .quiz-container,
+  .contactform-container,
+  .container {
+    width: 100%; /* Use 100% width instead of fixed pixels */
+    margin: 10px 0; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust form width inside contact form */
+  form {
+    max-width: 100%; /* Allow form to take full width of its container */
+  }
+
+  /* Make quiz, countdown, and bored sections responsive */
+  .quiz-content,
+  .quiz-content h2,
+  .countdown-container,
+  .countdown-content h2,
+  .container h2,
+  .activity-container {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust header and footer containers */
+  .header-container,
+  .footer-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  /* Adjust header navigation */
+  .header-content {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  /* Update navigation list for smaller screens */
+  ul#navigation {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 0;
+  }
+
+  ul#navigation li a {
+    padding: 8px; /* Increase padding for touch targets */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  /* Other necessary style adjustments for smaller screens... */
 }
