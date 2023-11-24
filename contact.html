@@ -35,16 +35,75 @@
     <section class="intro-container" id="intro">
       <div class="intro-content">
         <h1><center>NourishNest: Weekly Wholesome Eats</center></h1>
-        <h2>Coming Soon :)</h2>
 
-        <img
-          src="IMG/EatHealthy.gif"
-          alt="Eat healthy animation"
-          class="intro-eathealthygif"
-          width="250"
-        />
-      </div>
-    </section>
+  <section class="contactform-container" id="contactform">
+    <div class="contactform-content">
+      <h2 style="font-size: 30px;">Contact Us!</h2>
+        <form action="https://getform.io/f/4ae7d61c-8a8f-4961-8cac-40c5ad742f35" method="POST">
+          <p style="color: #334226;">Please fill out this form weekly with your desired meal(s)!</p>
+
+            <label for="name">First & Last Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Contact Email Address</label>
+            <input type="email" id="email" name="email">
+
+            <label for="paypal">PayPal Email Address</label>
+            <input type="paypal" id="paypal" name="paypal">
+
+            <label for="message">Delivery Address & Zip Code</label>
+            <input type="text" id="message" name="message">
+
+            <!-- add hidden Honeypot input to prevent spams -->
+            <input type="hidden" name="_gotcha" style="display:none !important"
+            >
+           
+            <!-- Grilled Salmon Symphony Field -->
+            <label for="grilled-salmon">Would you like an order of Grilled Salmon Symphony?</label>
+            <select id="grilled-salmon" name="grilled-salmon">
+              <option value="GSS-Yes">Yes</option>
+              <option value="GSS-No">No</option>
+            </select>
+
+            <!-- Mediterranean Chickpea Fiesta Field -->
+            <label for="chickpea-fiesta">Would you like an order of Mediterranean Chickpea Fiesta?</label>
+            <select id="chickpea-fiesta" name="chickpea-fiesta">
+              <option value="MCF-Yes">Yes</option>
+              <option value="MCF-No">No</option>
+            </select>
+
+            <!-- Stuffed Portobello Delight Field -->
+            <label for="stuffed-portobello">Would you like an order of Stuffed Portobello Delight?</label>
+            <select id="stuffed-portobello" name="stuffed-portobello">
+              <option value="SPD-Yes">Yes</option>
+              <option value="SPD-No">No</option>
+            </select>
+
+            <!-- Spicy Thai Basil Bliss Field -->
+            <label for="spicy-thai">Would you like an order of Spicy Thai Basil Bliss?</label>
+            <select id="spicy-thai" name="spicy-thai">
+              <option value="STBB-Yes">Yes</option>
+              <option value="STBB-No">No</option>
+            </select>
+
+            <!-- Beet & Goat Cheese Elegance Field -->
+            <label for="beet-goatcheese">Would you like an order of Beet & Goat Cheese Elegance?</label>
+            <select id="beet-goatcheese" name="beet-goatcheese">
+              <option value="BGCE-Yes">Yes</option>
+              <option value="BGCE-No">No</option>
+            </select>
+
+            <!-- Lentil Sweet Harmony Field -->
+            <label for="sweet-lentil">Would you like an order of Lentil Sweet Harmony?</label>
+            <select id="sweet-lentil" name="sweet-lentil">
+              <option value="LSH-Yes">Yes</option>
+              <option value="LSH-No">No</option>
+            </select>
+            
+            <button type="submit">SEND!</button>
+        </form>
+    </div>
+</section>
 
     <section class="promises-container" id="promises">
       <div class="promises-content">
