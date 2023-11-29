@@ -1,5 +1,9 @@
 /*BASE STYLE*/
 
+body {
+  background-color: #92e000;
+}
+
 h1 {
   font-size: 60px;
   text-align: center;
@@ -62,7 +66,7 @@ img {
 /*INTRO STYLE*/
 
 .intro-container {
-  background-image: url(darkpurplerainbkgd.jpg);
+  background: #ffffff;
   background-repeat: repeat;
   display: flex;
   justify-content: center;

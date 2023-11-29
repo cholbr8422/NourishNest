@@ -184,7 +184,7 @@ contactForm.addEventListener("submit", function (event) {
   });
 
   // Send the form data to an external API endpoint using fetch
-  fetch("https://api.example.com/contact", {
+  fetch("https://getform.io/f/4ae7d61c-8a8f-4961-8cac-40c5ad742f35", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
