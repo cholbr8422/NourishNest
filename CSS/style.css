@@ -26,7 +26,7 @@ p {
 }
 
 h2 {
-  color: rgb(245, 214, 230);
+  color: #92e000;
   font-size: 25px;
   font-style: normal;
   line-height: normal;
@@ -332,11 +332,11 @@ hr.double {
   align-items: center;
   padding: 20px;
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
 }
 
 form {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
